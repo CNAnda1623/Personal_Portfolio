@@ -199,7 +199,7 @@ svg{
     width: 75%;
     height: 100%;
     padding: 4.5rem 0 0 3rem;
-    backdrop-filter: blue(24px);
+    backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     transition: right .4s;
   }
@@ -735,6 +735,8 @@ svg{
   .nav{
     height: calc(var(--header-height) + 1.5rem);
   }
+
+  .nav__close,
   .nav__toggle{
     display: none;
   }
@@ -748,12 +750,12 @@ svg{
   }
 
   .blur-header::after{
-    /* backdrop-filter: blur(25px); */
+    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
   }
 }
 
-@media screen and (min-width: 1125px){
+@media screen and (min-width: 1152px){
   .container{
     margin-inline: auto;
   }
@@ -837,7 +839,7 @@ svg{
 
   .contact__container{
     grid-template-columns: 680px;
-    padding-block: 2.5rem 4rem;
+    padding-block: 2.5rem 2rem;
   }
 
   .contact__form{
@@ -859,7 +861,7 @@ svg{
 
   .footer{
     padding-block: 4.5rem 4rem;
-  }
+  } 
 
   .footer__container{
     grid-template-columns: repeat(3, 1fr);
