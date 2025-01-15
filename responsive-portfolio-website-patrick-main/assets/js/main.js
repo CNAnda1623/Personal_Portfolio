@@ -45,13 +45,19 @@ const sendEmail = (e) =>{
     e.preventDefault()
 
     // ServiceID - templateID - #form - publickey
-    emailjs.sendForm('service_ledc12b', 'template_ct9om1a', '#contact-form', '33G6Wt3BiNmHu_H9I')
-    .then(() =>{
+    emailjs.sendForm('service_bgo305y', 'template_j69mo1q', '#contact-form', '-1y4t5YHUAEYu0bk3').then(() =>{
         //show sent message
-        contactMessage.textcontent = 'Message Sent Successfully✅'
+        contactMessage.textContent = 'Message Sent Successfully✅'
+
+        setTimeout(() =>{
+            contactMessage.textContent = ''
+        }, 5000)
+
+        contactForm.reset()
+
     }, ()=>{
         // show error message
-        contactMessage.textcontent = 'Message not sent (service error)❌'
+        contactMessage.textContent = 'Message not sent (service error)❌'
     })
 }
 

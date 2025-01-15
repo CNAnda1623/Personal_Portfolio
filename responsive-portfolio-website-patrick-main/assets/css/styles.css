@@ -724,7 +724,7 @@ svg{
 
 
 /* For large devices */
-@media source and (min-width: 1023px){
+@media screen and (min-width: 1023px){
   .section{
     padding-block: 7rem 2rem;
   }
@@ -740,6 +740,7 @@ svg{
   .nav__toggle{
     display: none;
   }
+
   .nav__list{
     flex-direction: row;
     column-gap: 3rem;
